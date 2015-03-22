@@ -1,0 +1,135 @@
+/**************               ***************/
+
+
+body{
+    font-size:14px;
+    position: relative;
+    padding: 4%;
+}
+#main_header{
+    height: 450px;
+    border-bottom: 1px solid black;
+    position: relative;
+
+}
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+#todo-add {
+    position: relative;
+    max-width: 766px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    margin: 10px;
+}
+.logo_large{
+    height: 40px;
+    width: auto;
+}
+#main-nav{
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    left: 30px;
+    top: 0px;
+    
+}
+#main-nav ul{
+    width: 100%;
+    height: 100%;
+}
+#main-nav ul li{
+    list-style-type: none;
+    margin: 0px 5px 0px 0px;
+    padding: 0px;
+    display: inline-block;
+}
+#main-nav > ul > li > a:hover{
+    color: green;
+}
+
+.row-header{
+    font-weight: bold;
+}
+
+
+#main-footer{
+    border-top: 1px solid black;
+    min-height: 10vh;
+    text-align: center;
+}
+
+#main-content{
+    min-height: 80vh;
+}
+#todo-display{
+    width: 60%;
+    display: inline-block;
+}
+#display_refresh{
+}
+.highlight {
+    background-color: #ddd;
+    cursor: pointer;
+}
+#update_list
+{
+    display: none;
+}
+.todo-record {
+    cursor: pointer;
+}
+
+.todo-record:hover {
+    background-color: #eee;
+}
+
+.login_form{
+    width: 40%;
+    height: 40%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: lightgray;
+    border: 2px double gray;
+}
+.controls {
+    padding: 30px 0 15px;
+    text-align: center;
+}
+
+.controls .btn {
+    margin-bottom: 15px;
+}
+.lead {
+    text-align: center;
+    padding: 20px;
+}
+
+#waveform {
+    position: relative;
+}
+
+#progress-bar {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    margin-top: -10px;
+    left: 5%;
+    width: 90%;
+}
+
+#drop {
+    border: 3px dashed #ddd;
+    padding: 30px;
+}
+
+#drop.wavesurfer-dragover {
+    border-color: #333;
+}
