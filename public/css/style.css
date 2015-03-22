@@ -25,6 +25,9 @@ body{
     display: inline;
     color: darkorange;
 }
+h3 {
+    text-align: center;
+}
 
 .row-header{
     font-weight: bold;
@@ -64,12 +67,10 @@ body{
 
 .login_form{
     width: 40%;
-    height: 40%;
-    margin: 0 auto;
+    height: 200px;
+    margin: 50px auto;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: lightgray;
     border: 2px double gray;
 }
 .controls {
@@ -112,4 +113,9 @@ body{
 }
 canvas {
     cursor: pointer;
+}
+#signup {
+    margin: 50px auto;
+    width: 500px;
+    text-align: center;
 }

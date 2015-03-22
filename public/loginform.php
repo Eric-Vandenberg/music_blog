@@ -79,7 +79,7 @@
                     
                     <form action="../public/actions/uploadhandler.php" method="post" enctype="multipart/form-data">
                         <h3 id="rightTitle">Select mp3 or mp4 file to upload:</h3>
-                        <input class="btn btn-info btn-sm" type="file" name="fileToUpload" id="fileToUpload">
+                        <input class="btn btn-info btn-sm disabled" type="file" name="fileToUpload" id="fileToUpload">
                         <input class="btn btn-info btn-sm disabled" type="submit" value="Upload" name="submit">
                     </form>
                 </div>
@@ -87,14 +87,14 @@
     </header>
 
     <div class="container">
-        <div class="login_form">
-            <div id="showing_name"></div>
-            <form action="loginUser.php" method="post">
-                <input class="usrnm"type="text" name="username" placeholder="Username">
-                <input class="usrnm"type="password" name="password" placeholder="Password">
-                <button type="submit" id="usrlgn" class="btn">Login</button>
-            </form>
-        </div>
+        <div id="showing_name"></div>
+        <form id="signup" action="loginUser.php" method="post">
+            <h3 id="rightTitle">Please Login Below</h3><br>
+            <h3 id="rightTitle">No account?  Free sign up <a href="signupform.php">here!</a></h3><br>
+            <input class="usrnm"type="text" name="username" placeholder="Username">
+            <input class="usrnm"type="password" name="password" placeholder="Password">
+            <button type="submit" id="usrlgn" class="btn btn-info btn-sm">Login</button>
+        </form>
     </div>
     <?php include( '../includes/footer.php'); ?>
 </body>
