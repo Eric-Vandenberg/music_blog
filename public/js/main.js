@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var options = {
         container     : document.querySelector('#waveform'),
         waveColor     : 'violet',
-        progressColor : 'purple',
-        loaderColor   : 'purple',
-        cursorColor   : 'navy'
+        progressColor : 'DarkOrange',
+        loaderColor   : 'DarkOrange',
+        cursorColor   : 'MediumVioletRed'
     };
 
     if (location.search.match('scroll')) {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Init
     wavesurfer.init(options);
     // Load audio from URL
-    wavesurfer.load('uploads/';
+    wavesurfer.load("../includes/uploads/02 Zone'n (Prod by D.R.U.G.$.).mp3");
 
     // Regions
     if (wavesurfer.enableDragSelection) {
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Drag'n'drop
+//Drag'n'drop
 // document.addEventListener('DOMContentLoaded', function () {
 //     var toggleActive = function (e, toggle) {
 //         e.stopPropagation();

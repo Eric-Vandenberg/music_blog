@@ -1,3 +1,3 @@
     <footer id="main-footer">
-        Footer
+        <p>&copy;<?php echo date('Y'); ?> Eric Vandenberg</p>
     </footer>

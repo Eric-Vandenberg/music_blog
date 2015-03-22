@@ -1,10 +1,29 @@
+<?php 
+    session_start();
+
+    include('actions/connect.php');
+
+    if(isset($_SESSION['user']))
+    {
+        ?><a href="logout.php" class="right">Log Out</a><?php
+    }
+    else
+    {
+        ?><a href="loginform.php">Log In</a><?php
+        header('Location: loginform.php');
+        exit();
+    }
+
+
+?>
+
 <!doctype html>
 
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <title>Todo List</title>
+    <title>Music | BLOG</title>
 
     <link rel="stylesheet" href="assets/external/bootstrap/css/bootstrap.min.css">
     <script src="assets/external/jquery.min.js"></script>
@@ -37,7 +56,7 @@
                     <button id="display_refresh" type="button" class="btn btn-default glyphicon glyphicon-refresh"></button>
                     <button type="button" id="update_list">Delete</button>
                     <div class="todo-list">
-                        <p>Upload your music and share</p>
+                        <h3>Upload your music and share</h3>
                     </div>
                 </div>
             </div>
