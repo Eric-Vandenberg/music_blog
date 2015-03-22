@@ -12,45 +12,9 @@ body{
     position: relative;
 
 }
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-}
-#todo-add {
-    position: relative;
-    max-width: 766px;
-    margin: 0 auto;
-}
-.logo{
-    float: left;
-    margin: 10px;
-}
-.logo_large{
-    height: 40px;
-    width: auto;
-}
-#main-nav{
-    text-align: center;
-    position: fixed;
-    height: 100%;
-    left: 30px;
-    top: 0px;
-    
-}
-#main-nav ul{
-    width: 100%;
-    height: 100%;
-}
-#main-nav ul li{
-    list-style-type: none;
-    margin: 0px 5px 0px 0px;
-    padding: 0px;
-    display: inline-block;
-}
-#main-nav > ul > li > a:hover{
-    color: green;
+h1 {
+    color: violet;
+    padding: 10px 0px 10px 0px;
 }
 
 .row-header{
@@ -132,4 +96,8 @@ body{
 
 #drop.wavesurfer-dragover {
     border-color: #333;
+}
+#fileToUpload {
+    margin: 15px auto;
+
 }
