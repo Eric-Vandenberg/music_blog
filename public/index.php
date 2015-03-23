@@ -53,8 +53,8 @@
 
             <div class="row">
                 <div class="col-md-12 todo-display-container">
+                    <h3 id="blogPlaceHolder">Upload your music and post it to the blog!</h3><br>
                     <div class="todo-list">
-                        <h3 id="blogPlaceHolder">Upload your music and post it to the blog!</h3><br>
                         <div class="col-md-3">
                             <img src="../includes/images/photo.jpg" class="img-circle sm"></img>
                             <div class="sm">DJSomeKid</div>
@@ -104,6 +104,36 @@
                                     Mute
                                 </button>
                             </div>
+                        </div><br>
+                        <div class="col-md-6 col-md-offset-6" id="comments">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>00:46</td>
+                                        <td>Omg omg omg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00:50</td>
+                                        <td>Aaaaaamaaazing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00:52</td>
+                                        <td>Put that on the beat, oh!</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00:55</td>
+                                        <td>Holy!</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00:56</td>
+                                        <td>That bass!</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02:18</td>
+                                        <td>Dum dum dum ayyyyy!</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     
