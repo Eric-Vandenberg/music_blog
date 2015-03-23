@@ -20,7 +20,7 @@ if(file_exists($target_file))
 if(isset($_POST['submit']))
 {
 	//check if the file's size is not greater than 3 megabytes.  File size can be found in the $_FILES superglobal for our fileupload field.
-	if($_FILES['fileToUpload']['size']>9000000)
+	if($_FILES['fileToUpload']['size']>12000000)
 	{
 	//echo an error message that it is too large
 		echo "The file is too large.  Please upload files under 3 megs";
@@ -66,6 +66,6 @@ if ($uploadOK)
     //else if the $uploadOk wasn't true
 
 //echo a failure message, because some criteria didn't match
-    echo "Something went wrong";
+    echo " Do the Happy Dance";
 }
 ?></pre>

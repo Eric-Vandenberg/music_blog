@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Init
     wavesurfer.init(options);
     // Load audio from URL
-    wavesurfer.load("../includes/uploads/02 Zone'n (Prod by D.R.U.G.$.).mp3");
+    wavesurfer.load("../includes/uploads/Ice Rink.mp3");
 
     // Regions
     if (wavesurfer.enableDragSelection) {
