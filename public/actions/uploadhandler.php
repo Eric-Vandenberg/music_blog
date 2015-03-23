@@ -1,7 +1,7 @@
 <pre><?php
 
 //make a variable, $target_dir, which indicates where files will be uploaded.  In this case, the uploads directory.  Don't forget the separating / between the directory and any file that will come after.
-$target_dir = "../includes/uploads/";
+$target_dir = "../../includes/uploads/";
 //make a variable, $target_file, that combines the target directory with the uploaded file name.  This can be found in the $_FILES superglobal, in the fileToUpload key, in the name subkey
 $target_file = $target_dir . $_FILES['fileToUpload']['name'];
 print_r($_FILES);
@@ -23,7 +23,7 @@ if(isset($_POST['submit']))
 	if($_FILES['fileToUpload']['size']>12000000)
 	{
 	//echo an error message that it is too large
-		echo "The file is too large.  Please upload files under 3 megs";
+		echo "The file is too large.  Please upload files under 12 megs";
 	//set our $uploadOK flag to false
 		$uploadOK = false;
 	}
@@ -54,7 +54,7 @@ if ($uploadOK)
         //echo a success message for the upload
         echo "Successful upload";
         //echo an HTML img tag with the $target_file as its src
-        echo "<img src='$target_file'>";
+        header('Location: ../index.php');
     }
     //else if $move_succeeded wasn't true
     else 
@@ -66,6 +66,6 @@ if ($uploadOK)
     //else if the $uploadOk wasn't true
 
 //echo a failure message, because some criteria didn't match
-    echo "Something went wrong";
+    //echo "Something went wrong";
 }
 ?></pre>

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Init
     wavesurfer.init(options);
     // Load audio from URL
-    wavesurfer.load("../includes/uploads/Ice Rink.mp3");
+    wavesurfer.load("../includes/uploads/The Weeknd - Often (Kygo Remix).mp3");
 
 
 

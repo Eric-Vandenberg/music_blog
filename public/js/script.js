@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $("#uploadi").on("change", "#fileToUpload", function() {
         var fileText = $(".btn-sm-texti").val();
@@ -10,7 +11,7 @@ $(document).ready(function(){
         $("#fileImportant").html(loseTheExt);
 
         var getUsername = $(".useri").html();
-        console.log(getUsername);
+
         $("#userID").html(getUsername);
         
         
@@ -43,5 +44,23 @@ $(document).ready(function(){
                 console.log("Added!");
             }
         });
+    });
+    $("#display_refresh").click(function(){
+
+        $.ajax(
+        {
+            url: 'actions/get.php',
+            //dataType: 'text',
+            cache: false,
+            method: 'POST',
+            error: function () {
+                alert('Get Error');
+            },
+            success: function(data){
+
+                    $(".bloggy").html(data);
+            }
+        });
+            
     });
 });
