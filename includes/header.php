@@ -3,13 +3,13 @@
         <div class="header">
             <noindex>
             <ul class="nav nav-pills pull-right">
-                <li><?php ?></li>
+                <li id="fileNamey"></li>
             </ul>
             </noindex>
             <span id="inlineTitle">
-            <h1 itemprop="name" id="leftTitle">MUSIC</h1>
-            <h1 itemprop="name" id="centerTitle"> | </h1>
-            <h1 itemprop="name" id="rightTitle">BLOG</h1>
+                <h1 itemprop="name" id="leftTitle">MUSIC</h1>
+                <h1 itemprop="name" id="centerTitle"> | </h1>
+                <h1 itemprop="name" id="rightTitle">BLOG</h1>
             </span>
         </div>
 
@@ -46,19 +46,27 @@
                     Mute
                 </button>
                 
-                <form action="../public/actions/uploadhandler.php" method="post" enctype="multipart/form-data">
+                <form id="uploadi" action="../public/actions/uploadhandler.php" method="post" enctype="multipart/form-data">
                     <h3 id="rightTitle">Select mp3 or mp4 file to upload:</h3>
-                    <input class="btn btn-info btn-sm" type="file" name="fileToUpload" id="fileToUpload">
+                    <input class="btn btn-info btn-sm-texti" type="file" name="fileToUpload" id="fileToUpload">
                     <input class="btn btn-success btn-sm" type="submit" value="Upload" name="submit" id="step1">
                 </form>
-                <form class="form-inline vertical">
+                <form id="postIt" class="form-inline vertical">
+                    <div class="form-group hidden">
+                        <label class="hidden" for="userID"></label>
+                        <div class="form-control hidden" type="text" name="useri" id="userID"></div>
+                    </div>
+                    <div class="form-group hidden">
+                        <label class="hidden" for="fileImportant"></label>
+                        <div class="form-control hidden" type="text" name="file" id="fileImportant"></div>
+                    </div>
                     <div class="form-group">
                         <label class="" for="songName">Song Name:</label>
-                        <input class="form-control" type="text" name="title" placeholder="Enter Song Title" id="songName">
+                        <div class="form-control" type="text" name="title" id="songName"></div>
                     </div>
                     <div class="form-group">
                         <label class="" for="artist">Artist Name:</label>
-                        <input class="form-control" type="text" name="artist" placeholder="Enter Artist Name" id="artist">
+                        <div class="form-control" type="text" name="artist" id="artist"></div>
                     </div>
                     <div class="form-group">
                         <label class="" for="key">Key:</label>
@@ -70,7 +78,7 @@
                     </div>
                     <div class="form-group">
                         <label class="" for="songName">Track Info:</label>
-                        <textarea class="form-control" name="details" placeholder="Tell Us About Your Work!"></textarea>
+                        <textarea class="form-control" name="trackInfo" placeholder="Tell Us About Your Work!"></textarea>
                     </div>
                     <div class="form-group">
                         <label class="" for="save_post">Post!</label>

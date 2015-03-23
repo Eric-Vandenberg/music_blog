@@ -4,7 +4,7 @@
 $target_dir = "../../includes/uploads/";
 //make a variable, $target_file, that combines the target directory with the uploaded file name.  This can be found in the $_FILES superglobal, in the fileToUpload key, in the name subkey
 $target_file = $target_dir . $_FILES['fileToUpload']['name'];
-print_r($_FILES);
+
 
 //set an initial flag to indicate success.  $uploadOK.  Set it initially to true
 $uploadOK = true;
@@ -54,7 +54,8 @@ if ($uploadOK)
         //echo a success message for the upload
         echo "Successful upload";
         //echo an HTML img tag with the $target_file as its src
-        echo "<img src='$target_file'>";
+
+        //echo "<img src='$target_file'>";
     }
     //else if $move_succeeded wasn't true
     else 

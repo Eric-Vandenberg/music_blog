@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Load audio from URL
     wavesurfer.load("../includes/uploads/Ice Rink.mp3");
 
+
+
     // Regions
     if (wavesurfer.enableDragSelection) {
         wavesurfer.enableDragSelection({

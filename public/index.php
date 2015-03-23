@@ -5,7 +5,8 @@
 
     if(isset($_SESSION['user']))
     {
-        ?><a href="logout.php" class="right">Log Out</a><?php
+        ?><a href="logout.php" class="right">Log Out</a>
+        <a href="#" class="useri"><?php echo ($_SESSION['user']['username']); ?></a><?php
     }
     else
     {
@@ -16,6 +17,7 @@
 
 
 ?>
+
 
 <!doctype html>
 
@@ -136,8 +138,9 @@
                             </table>
                         </div>
                     </div>
-                    
+                
                 </div>
+                    
             </div>
         </div>
     <?php include( '../includes/footer.php'); ?>
